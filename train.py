@@ -50,6 +50,7 @@ def train_model(args, model, data_loader, criterion, optimizer):
             running_loss += loss.item()
         print('Epoch [%d]     Loss:%8.4f'
               % (epoch + 1, float(running_loss / (i+1))))
+    print('Finished training')
 
 
 if __name__ == '__main__':
